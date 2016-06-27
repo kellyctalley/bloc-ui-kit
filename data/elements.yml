@@ -1,0 +1,14 @@
+colors_schemes:
+  - title: Main Colors
+    colors:
+    - color: dark-blue
+      title: Dark Blue
+      value: '#276169'
+    - color: medium-blue
+      title: Medium Blue
+      value: '#93B6B4'
+  - title: Neutral Colors
+    colors:
+    - color: basic-black
+      title: Basic Black
+      value: '#000000'

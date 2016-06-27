@@ -1,0 +1,14 @@
+<section role="region" class="page__section">
+  <% data.elements.colors_schemes.each do |scheme| %>
+  <h2><%= scheme.title %></h2>
+  <ul>
+    <% scheme.colors.each do |color| %>
+    <li>
+      <span class="color__block"></span>
+      <h5 class="card__title"><%= color.title %></h5>
+      <h5 class="card__description"><%= color.value %></h5>
+    </li>
+    <% end %>
+  </ul>
+  <% end %>
+</section>

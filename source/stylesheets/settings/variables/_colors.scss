@@ -1,0 +1,21 @@
+// Color Variables
+// ========================================
+
+//*** MAIN COLORS ***//
+$dark-blue:      #276169;
+$medium-blue:    #93B6B4;
+$light-blue:     #D3E7E6;
+$crimson-red:    #8B181B;
+$light-red:      #CE6365;   
+
+
+
+
+//MAIN PALETTE LIST
+$colors: (
+  dark-blue:    $dark-blue,
+  medium-blue:  $medium-blue,
+  light-blue:   $light-blue,
+  crimson-red:  $crimson-red,
+  lighter-red:  $light-red
+);

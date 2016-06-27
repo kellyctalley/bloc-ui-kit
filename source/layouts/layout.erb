@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <title><%= current_page.data.title || "BlocShop UI Kit" %></title>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic|Flamenco:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheets -->
+    <%= stylesheet_link_tag :main %>
+  </head>
+  <body class="<%= page_classes %>">
+    <main role="main">
+      <%= yield %>
+    </main>
+    
+    <!-- Javascript -->
+    <%= javascript_include_tag :all %>
+  </body>
+</html>
