@@ -1,0 +1,57 @@
+// Page Misc Elements Modules
+// ========================================
+
+// Variables
+$card-height:         200px;
+$card-width:          150px;
+
+$color-title:         $darkest-gray;
+$color-description:   $medium-gray;
+
+$color-block-height:  125px;
+
+// Structure
+.card {
+  height: $card-height;
+  margin-bottom: $spacer-foxtrot;
+  width: $card-width;
+  background-color: $basic-white;
+
+  &.card--right {
+    text-align: right;
+  }
+}
+
+.card__title,
+.card__description {
+  margin-bottom: $spacer-foxtrot;
+}
+
+.card__title {
+  color: $color-title;
+}
+
+.card__description {
+  color: $color-description;
+}
+
+// Create Color Blocks
+@each $color in $colors {
+  $type:   nth($color, 1);
+  $value:  nth($color, 2);
+
+  .color__block--#{$type} {
+    background-color: $value;
+    display: block;
+    height: $color-block-height;
+    margin-bottom: $spacer-foxtrot;
+    width: $card-width;
+  }
+}
+
+// Icon Block
+.icon__block {
+  height: 70px;
+  margin-bottom: $spacer-delta;
+  padding: $spacer-delta $spacer-delta $spacer-delta 0;
+}

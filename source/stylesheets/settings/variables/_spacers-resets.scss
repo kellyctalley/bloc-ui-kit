@@ -1,0 +1,32 @@
+// Spacers & Resets
+// ========================================
+
+// Resets List
+$resets: (
+  (bottom,  0),
+  (left,    0),
+  (right,   0),
+  (top,     0)
+);
+
+
+// Spacers List
+$spacers: (
+  (alpha,     60px),
+  (bravo,     45px),
+  (charlie,   30px),
+  (delta,     20px),
+  (echo,      15px),
+  (foxtrot,   10px),
+  (golf,       5px)
+);
+
+
+// Spacer Variables
+$spacer-alpha:   60px;
+$spacer-bravo:   45px;
+$spacer-charlie: 30px;
+$spacer-delta:   20px;
+$spacer-echo:    15px;
+$spacer-foxtrot: 10px;
+$spacer-golf:     5px;

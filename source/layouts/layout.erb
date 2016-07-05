@@ -14,7 +14,19 @@
     <%= stylesheet_link_tag :main %>
   </head>
   <body class="<%= page_classes %>">
-    <main role="main">
+
+    <header role="banner" class="homepage__header page__container">
+      <div class="homepage__logo">
+        <%= image_tag "main/ck-logo-blk.png" %>
+      </div>
+      <h1 class="header__title heading--h3">styleguide</h1>
+      <div class="header__nav">
+        
+      </div>
+          
+    </header>
+
+    <main role="main" class="page__container">
       <%= yield %>
     </main>
     

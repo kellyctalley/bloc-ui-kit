@@ -1,0 +1,49 @@
+<section role="region" aria-labelledby="typography" class="page__section">
+  <header role="banner" class="section__header">
+    <div class="header__container">
+      <h4 class="header__title--section" id="typography">typography</h4>
+    </div>
+  </header>
+  <div class="section__body clearfix">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">body family: Muli</h5>
+    </header>
+    <% data.elements.font_family.each do |f| %>
+      <h3 class="float--left margin-right--echo text--light text--uppercase"><%= f.letter %></h3>
+    <% end %>
+    <div class="clear">
+      <% data.elements.font_family.each do |f| %>
+        <h3 class="float--left margin-right--echo text--light"><%= f.letter %></h3>
+      <% end %>
+    </div>
+  </div>
+  <div class="section__body clearfix">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">body family: Flamenco</h5>
+    </header>
+    <% data.elements.font_family.each do |f| %>
+      <h3 class="float--left margin-right--echo text--light text--uppercase text--display"><%= f.letter %></h3>
+    <% end %>
+    <div class="clear">
+      <% data.elements.font_family.each do |f| %>
+        <h3 class="float--left margin-right--echo text--light text--display"><%= f.letter %></h3>
+      <% end %>
+    </div>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">standard headers</h5>
+    </header>
+    <% data.elements.typography.each do |t| %>
+      <<%= t.type %> class="heading--<%= t.type %> text--headline">The quick brown fox jumps over the lazy dog.</<%= t.type %>>
+    <% end %>
+  </div>
+
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">standard body</h5>
+    </header>
+    <p class="margin-right--alpha">The only things in the kitchen that did not sneeze, were the cook, and a large cat which was sitting on the hearth and grinning from ear to ear. 'Please would you tell me,' said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, 'why your cat grins like that?'</p>
+  </div>
+
+</section>

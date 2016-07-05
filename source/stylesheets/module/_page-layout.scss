@@ -1,0 +1,56 @@
+// Layout Module Stylesheet
+// ========================================
+
+// Variables
+$page-background:               $basic-white;
+$page-offset:                   14rem;
+$page-height:                   100vh;
+$page-spacing:                  $spacer-delta;
+
+$section-header-background:     $basic-white;
+$section-header-background-alt: $basic-white;
+
+$section-body-margin:           $spacer-echo;
+
+$section-body-title-color:      $darkest-gray;
+
+
+// Structure
+.page {
+  background: $page-background;
+  margin-left: $page-offset;
+  height: $page-height;
+  overflow-x: scroll;
+}
+
+.page__section {
+  margin-bottom: $spacer-alpha;
+}
+
+// Page Section Header
+.section__header {
+  border-bottom: 1px solid $light-gray;
+}
+
+.header__title {
+  @include font-type($primary-sans-serif, normal, 100);
+}
+
+.header__title--section {
+  @include font-type($primary-sans-serif, normal, 400);
+  margin-bottom: 0;
+}
+
+
+// Page Section Body
+.section__body {
+  @include clearfix;
+  margin-top: $section-body-margin;
+  padding: $page-spacing 0;
+}
+
+.body__header__title {
+  @include s-delta;
+  color: $section-body-title-color;
+}
+

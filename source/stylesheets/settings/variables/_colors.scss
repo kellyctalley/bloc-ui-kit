@@ -6,16 +6,43 @@ $dark-blue:      #276169;
 $medium-blue:    #93B6B4;
 $light-blue:     #D3E7E6;
 $crimson-red:    #8B181B;
-$light-red:      #CE6365;   
+$lighter-red:    #CE6365;
+
+//*** NEUTRAL COLORS ***//
+$basic-black:    #000000;
+$darkest-gray:   #484848;
+$medium-gray:    #9B9A9A;
+$light-gray:     #C5C2C2;
+$lightest-gray:  #EAEAEA;
+$basic-white:    #FFFFFF;
+
+//*** ALERT COLORS ***//
+$alert-green:        #76A481;
+$alert-light-green:  #9BB6A2;
+$alert-orange:       #DA9C53;
+$alert-light-orange: #F0BD81;
+$alert-red:          #AB6969;
+$alert-light-red:    #C89292;
 
 
 
-
-//MAIN PALETTE LIST
+//*** MAIN PALETTE LIST ***//
 $colors: (
-  dark-blue:    $dark-blue,
-  medium-blue:  $medium-blue,
-  light-blue:   $light-blue,
-  crimson-red:  $crimson-red,
-  lighter-red:  $light-red
+  dark-blue:          $dark-blue,
+  medium-blue:        $medium-blue,
+  light-blue:         $light-blue,
+  crimson-red:        $crimson-red,
+  lighter-red:        $lighter-red,
+  basic-black:        $basic-black,
+  darkest-gray:       $darkest-gray,
+  medium-gray:        $medium-gray,
+  light-gray:         $light-gray,
+  lightest-gray:      $lightest-gray,
+  basic-white:        $basic-white,
+  alert-green:        $alert-green,
+  alert-light-green:  $alert-light-green,
+  alert-orange:       $alert-orange,
+  alert-light-orange: $alert-light-orange,
+  alert-red:          $alert-red,
+  alert-light-red:    $alert-light-red
 );

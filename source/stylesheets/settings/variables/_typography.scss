@@ -1,0 +1,46 @@
+// Typography Variables
+// ========================================
+
+  // Font Family
+  $primary-sans-serif: "Muli", "Helvetica", sans-serif;
+  $primary-serif: "Flamenco", "Georgia", serif;
+
+  // Font Sizes
+  $font-size-base: 16px;
+
+  $s-alpha:   48px;
+  $s-bravo:   36px;
+  $s-charlie: 30px;
+  $s-delta:   24px;
+  $s-echo:    18px;
+  $s-foxtrot: $font-size-base;
+  $s-golf:    14px;
+  $s-hotel:   12px;
+  $s-india:   10px;
+
+  // Line Heights
+  $base-line-height: $font-size-base * 2;
+  $base-line-small:  $font-size-base;
+
+  // Text Alignment
+  $text-align-center:  center;
+  $text-align-left:    left;
+  $text-align-justify: justify;
+  $text-align-right:   right;
+
+  // Text Alignment List
+  $text-alignments: (
+    center    $text-align-center,
+    left      $text-align-left,
+    justify   $text-align-justify,
+    right     $text-align-right
+  );
+
+  // Text Colors Map
+  $type-colors: (
+    'dark blue':      ( $dark-blue ),
+    'dark gray':      ( $darkest-gray ),
+    'light gray':     ( $light-gray ),
+    'black':          ( $basic-black ),
+    'white':          ( $basic-white )
+  );

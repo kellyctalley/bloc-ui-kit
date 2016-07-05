@@ -1,0 +1,12 @@
+<section role="region" aria-labelledby="icons" class="page__section">
+  <header role="banner" class="section__header">
+    <div class="header__container">
+      <h4 class="header__title--section" id="typography">icons</h4>
+    </div>
+  </header>
+  <div class="section__body reset-padding-bottom">
+    <% data.elements.icon_types.each do |type| %>
+      <%= image_tag type.img, class: 'icon__block' %>
+    <% end %>
+  </div>
+</section>

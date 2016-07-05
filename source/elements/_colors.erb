@@ -1,14 +1,22 @@
-<section role="region" class="page__section">
+<section role="region" aria-labelledby="colors" class="page__section">
+  <header role="banner" class="section__header">
+    <div class="header__container">
+      <h4 class="header__title--section" id="colors">colors</h4>
+    </div>
+  </header>
   <% data.elements.colors_schemes.each do |scheme| %>
-  <h2><%= scheme.title %></h2>
-  <ul>
-    <% scheme.colors.each do |color| %>
-    <li>
-      <span class="color__block"></span>
-      <h5 class="card__title"><%= color.title %></h5>
-      <h5 class="card__description"><%= color.value %></h5>
-    </li>
-    <% end %>
-  </ul>
+    <div class="section__body reset-padding-bottom">
+      <div class="section__body clearfix reset-padding-bottom reset-padding-left">
+        <ul>
+          <% scheme.colors.each do |color| %>
+            <li class="card card--right float--left margin-right--delta">
+              <span class="color__block--<%= color.color %>"></span>
+              <h6 class="card__title"><%= color.title %></h6>
+              <h6 class="card__description"><%= color.value %></h6>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
   <% end %>
 </section>

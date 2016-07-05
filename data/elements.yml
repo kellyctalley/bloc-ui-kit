@@ -2,13 +2,128 @@ colors_schemes:
   - title: Main Colors
     colors:
     - color: dark-blue
-      title: Dark Blue
+      title: dark blue
       value: '#276169'
     - color: medium-blue
-      title: Medium Blue
+      title: medium blue
       value: '#93B6B4'
+    - color: light-blue
+      title: light blue
+      value: '#D3E7E6'
+    - color: crimson-red
+      title: crimson red
+      value: '#8B181B'
+    - color: lighter-red
+      title: lighter red
+      value: '#CE6365'
   - title: Neutral Colors
     colors:
     - color: basic-black
-      title: Basic Black
+      title: basic black
       value: '#000000'
+    - color: darkest-gray
+      title: darkest gray
+      value: '#484848'
+    - color: medium-gray
+      title: medium gray
+      value: '#9B9A9A'
+    - color: light-gray
+      title: light gray
+      value: '#C5C2C2'
+    - color: lightest-gray
+      title: lightest gray
+      value: '#EAEAEA'
+    - color: basic-white
+      title: basic white
+      value: '#FFFFFF'
+  - title: Alert Colors
+    colors:
+    - color: alert-green
+      title: alert green
+      value: '#76A481'
+    - color: alert-light-green
+      title: alert light green
+      value: '#9BB6A2'
+    - color: alert-orange
+      title: alert orange
+      value: '#DA9C53'
+    - color: alert-light-orange
+      title: alert light orange
+      value: '#F0BD81'
+    - color: alert-red
+      title: alert red
+      value: 'AB6969'
+    - color: alert-light-red
+      title: alert light red
+      value: '#C89292'
+
+icon_types:
+  - title: Facebook
+    img: icons/icon-facebook.svg
+  - title: Pinterest
+    img: icons/icon-pinterest.svg
+  - title: Instagram
+    img: icons/icon-instagram.svg
+  - title: Email
+    img: icons/icon-email.svg
+  - title: Phone
+    img: icons/icon-phone.svg
+  - title: Search
+    img: icons/icon-search.svg
+  - title: Check Mark
+    img: icons/icon-check.svg
+  - title: Exclamation Mark
+    img: icons/icon-exclamation.svg
+  - title: Question Mark
+    img: icons/icon-question.svg
+  - title: Basket
+    img: icons/icon-basket.svg
+  - title: Delivery
+    img: icons/icon-delivery.svg
+  - title: Payment
+    img: icons/icon-dollar.svg
+  - title: Arrow Left
+    img: icons/icon-arrow-left.svg
+  - title: Arrow Right
+    img: icons/icon-arrow-right.svg
+  - title: Remove
+    img: icons/icon-x.svg
+  - title: Image
+    img: icons/icon-image.svg
+
+typography:
+  - type: h1
+  - type: h2
+  - type: h3
+  - type: h4
+  - type: h5
+  - type: h6
+
+font_family:
+  - letter: a
+  - letter: b
+  - letter: c
+  - letter: d
+  - letter: e
+  - letter: f
+  - letter: g
+  - letter: h
+  - letter: i
+  - letter: j
+  - letter: k
+  - letter: l
+  - letter: m
+  - letter: n
+  - letter: o
+  - letter: p
+  - letter: q
+  - letter: r
+  - letter: s
+  - letter: t
+  - letter: u
+  - letter: v
+  - letter: w
+  - letter: x
+  - letter: y
+  - letter: z
+
