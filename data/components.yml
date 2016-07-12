@@ -1,0 +1,14 @@
+buttons:
+  - type: primary
+  - type: secondary
+  - type: disabled
+alerts:
+  - type: success
+    msg: It worked successfully! Great job.
+    img: icons/icon-check-white.svg
+  - type: danger
+    msg: Something's not quite right.
+    img: icons/icon-question-white.svg
+  - type: warning
+    msg: That didn't work. Give it another go.
+    img: icons/icon-exclamation-white.svg

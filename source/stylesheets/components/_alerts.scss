@@ -2,3 +2,69 @@
 // ========================================
 
 // Variables
+$alert-border-radius:     3px;
+$alert-box-shadow:        rgba(0, 0, 0, 0.25);
+$alert-box-spread:        0 0 10px;
+$alert-margin:            0 auto $spacer-delta;
+$alert-padding:           $spacer-delta;
+$alert-transition:        all 0.8s ease;
+$alert-width:             100%;
+$alert-z-index:           1001;
+
+$alert-title-color:       $basic-white;
+
+$alert-icon-position-type: absolute;
+$alert-icon-position:     15px 15px null null;
+$alert-icon-height:       30px;
+
+$alerts: (
+  success   $alert-light-green  $alert-green,
+  danger    $alert-light-orange $alert-orange,
+  warning   $alert-light-red    $alert-red,
+  default   $medium-gray   $darkest-gray
+);
+
+
+// Structure
+@each $alert in $alerts {
+  $name:     nth($alert, 1);
+  $color-1:  nth($alert, 2);
+  $color-2:  nth($alert, 3);
+
+  .alert--#{$name} {
+    @include box-shadow($alert-box-spread, $alert-box-shadow);
+    @include font-type($primary-sans-serif, normal, 600);
+    @include position(relative);
+    @include transition($alert-transition);
+    background: $color-1;
+    border: 1px solid $color-2;
+    border-radius: $alert-border-radius;
+    margin: $alert-margin;
+    padding: $alert-padding;
+    text-align: left;
+    width: $alert-width;
+    z-index: $alert-z-index;
+
+    .alert__title {
+      @include s-foxtrot;
+      color: $alert-title-color;
+      margin: 0;
+    }
+  }
+
+  .alert__icon {
+    @include position($alert-icon-position-type, $alert-icon-position);
+    color: $alert-title-color;
+    height: $alert-icon-height;
+  }
+};
+
+
+// Dismiss Alert
+.alert--dismissed {
+  @include transform(translate(0, -50em));
+}
+
+.alert--hidden {
+  display: none;
+}

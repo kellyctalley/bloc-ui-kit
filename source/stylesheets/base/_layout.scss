@@ -10,7 +10,6 @@ html,
 body {
   @include position(relative);
   background-color: $site-background;
-  background: url("/images/main/ricepaper2.png") repeat;
   margin: 0 auto;
 
   &.is-fixed {
@@ -18,6 +17,16 @@ body {
     height: 100%;
     overflow: hidden;
   }
+}
+
+html {
+  background: url("/images/main/ricepaper2.png") repeat;
+}
+
+body {
+  background: url("/images/main/paint-dab.png") no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 

@@ -1,0 +1,18 @@
+<section role="region" aria-labelledby="inputs" class="page__section">
+  <header role="banner" class="section__header">
+    <div class="header__container">
+      <h4 class="header__title--section" id="alerts">alerts</h4>
+    </div>
+  </header>
+
+  <div class="section__body">
+    <% data.components.alerts.each do |alert| %>
+      <figure class="alert alert--<%= alert.type %>">
+        <h5 class="alert__title"><%= alert.msg %></h5>
+        <%= image_tag alert.img, class: "alert__icon" %>
+      </figure>
+    <% end %>
+  </div>
+  </div>
+
+</section>

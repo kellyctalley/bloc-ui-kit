@@ -1,0 +1,17 @@
+<section role="region" aria-labelledby="buttons" class="page__section">
+  <header role="banner" class="section__header">
+    <div class="header__container">
+      <h4 class="header__title--section" id="buttons">buttons</h4>
+    </div>
+  </header>
+
+  <div class="section__body">
+    <ul>
+      <% data.components.buttons.each do |button| %>
+        <li class="float--left margin-bottom--alpha margin-right--charlie">
+          <button class="button--<%= button.type %>">Button</button>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>

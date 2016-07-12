@@ -1,0 +1,20 @@
+// Buttons Variables
+// ========================================
+
+$buttons: (
+  'primary': (
+    $dark-blue,
+    $basic-white,
+    $medium-blue
+  ),
+  'secondary': (
+    $crimson-red,
+    $basic-white,
+    $lighter-red
+  ),
+  'disabled': (
+    $medium-gray,
+    $basic-white,
+    $light-gray
+  )
+);

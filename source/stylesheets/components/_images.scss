@@ -1,0 +1,72 @@
+// Images Component
+// ========================================
+
+// Variables
+$image-border-radius:     3px;
+$image-wrapper-color:     $light-blue;
+$image-wrapper-padding:   $spacer-echo;
+$image-hover-color:       $darkest-gray;
+
+
+
+
+// Structure
+.image__wrapper {
+  background-color: $image-wrapper-color;
+  padding: $image-wrapper-padding;
+  overflow: hidden;
+  border-radius: $image-border-radius;
+  position: relative;
+  cursor: pointer;
+}
+
+.image__wrapper--medium {
+  height: 300px;
+  width: 300px;
+}
+
+.image__wrapper--large {
+  height: 600px;
+  width: 600px;
+}
+
+.image__wrapper--small {
+  height: 150px;
+  width: 150px;
+}
+
+.image__main {
+  width: 100%;
+  position: relative;
+  left: 0;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.image__main--overlay {
+  background-color: $image-hover-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 130px;
+  text-align: center;
+
+  a {
+    color: #fff;
+    font-size: $s-delta;
+  }
+}
+
+.image__wrapper:hover .image__main--overlay { opacity: 0.75; }

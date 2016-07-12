@@ -1,0 +1,170 @@
+// Form Elements Component
+// ========================================
+
+
+// Variables
+$form-label-color:               $darkest-gray;
+$form-label-margin:              $spacer-echo;
+$form-label-weight:              700;
+
+$label-offset-margin:            25px;
+
+$form-input-background:          $basic-white;
+$form-input-border:              1px solid $light-gray;
+$form-input-border-radius:       2px;
+$form-input-color:               $darkest-gray;
+$form-input-height:              45px;
+$form-input-margin:              $spacer-echo 0 $spacer-charlie;
+$form-input-padding:             10px;
+
+$form-input-background-active:   $basic-white;
+$form-input-border-active:       1px solid $medium-gray;
+
+$form-input-background-inactive: $lightest-gray;
+$form-input-border-inactive:     1px solid $light-gray;
+
+$selector-input-background:           $basic-white;
+$selector-input-border:               1px solid $medium-gray;
+$selector-input-cursor:               pointer;
+$selector-input-dimensions:           18px;
+$selector-input-radius:               30em;
+$selector-input-shadow:               rgba(172,172,179,0.35);
+$selector-input-spread:               inset 0px 0px 3px 0px;
+$selector-input-v-align:              middle;
+
+$selector-input-background-active:    $dark-blue;
+$selector-input-position-active:      3px 0 null 0;
+
+// Structure
+
+// Labels
+label,
+.label {
+  @include s-foxtrot;
+  color: $form-label-color;
+  font-weight: $form-label-weight;
+  display: inline-block;
+  margin-bottom: $form-label-margin;
+  width: 100%;
+}
+
+
+// Inputs
+#{$all-text-inputs},
+.input--text
+input,
+select {
+  @include appearance(none);
+  @include box-shadow(inset 0px 0px 3px 0px, rgba(207,207,214,0.25));
+  @include font-type($primary-sans-serif, normal, 400);
+  @include s-foxtrot;
+  @include transition(border-color, 0.4s, ease);
+  background-color: $form-input-background;
+  border: $form-input-border;
+  border-radius: $form-input-border-radius;
+  color: $form-input-color;
+  height: $form-input-height;
+  margin: $form-input-margin;
+  padding: $form-input-padding;
+  width: 50%;
+
+  &:focus,
+  &:active {
+    @include box-shadow(0px 0px 5px 0px, rgba(172, 172, 179, 0.25));
+  }
+
+  &:focus {
+    background-color: $form-input-background-active;
+    border: $form-input-border-active;
+    outline: none;
+  }
+
+  &:hover {
+    border: $form-input-border-active;
+  }
+
+  &:active {
+    border: $form-input-border-active;
+    background-color: $form-input-background-active;
+  }
+
+  &:disabled {
+    background-color: $form-input-background-inactive;
+    border: $form-input-border-inactive;
+    color: $medium-gray;
+    cursor: not-allowed;
+  }
+}
+
+input[type="radio"] {
+  @include appearance(none);
+  @include position(relative);
+  @include box-shadow($selector-input-spread, $selector-input-shadow);
+  background-color: $selector-input-background;
+  border: $selector-input-border;
+  border-radius: $selector-input-radius;
+  height: $selector-input-dimensions;
+  vertical-align: $selector-input-v-align;
+  width: $selector-input-dimensions;
+
+  &:hover {
+    cursor: $selector-input-cursor;
+  }
+
+  &:focus {
+    border: $selector-input-border;
+    outline: none;
+  }
+}
+
+input[type="checkbox"] {
+  @include appearance(none);
+  @include position(relative);
+  @include box-shadow($selector-input-spread, $selector-input-shadow);
+  background-color: $selector-input-background;
+  border: $selector-input-border;
+  height: $selector-input-dimensions;
+  vertical-align: $selector-input-v-align;
+  width: $selector-input-dimensions;
+
+  &:hover {
+    cursor: $selector-input-cursor;
+  }
+
+  &:focus {
+    border: $selector-input-border;
+    outline: none;
+  }
+}
+
+input[type="radio"]:checked {
+
+  &::after{
+    @include position(absolute, $selector-input-position-active);
+    background-color: $selector-input-background-active;
+    border: $selector-input-border;
+    border-color: darken($dark-blue, 10%);
+    border-radius: $selector-input-radius;
+    content: "";
+    height: $selector-input-dimensions / 1.75;
+    margin: 0 auto;
+    width: $selector-input-dimensions / 1.75;
+
+  }
+}
+
+input[type="checkbox"]:checked {
+
+  &::after{
+    @include position(absolute, $selector-input-position-active);
+    background-color: $selector-input-background-active;
+    border: $selector-input-border;
+    border-color: darken($dark-blue, 10%);
+    content: "";
+    height: $selector-input-dimensions / 1.75;
+    margin: 0 auto;
+    width: $selector-input-dimensions / 1.75;
+
+  }
+}
+

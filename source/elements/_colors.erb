@@ -5,8 +5,7 @@
     </div>
   </header>
   <% data.elements.colors_schemes.each do |scheme| %>
-    <div class="section__body reset-padding-bottom">
-      <div class="section__body clearfix reset-padding-bottom reset-padding-left">
+      <div class="section__body">
         <ul>
           <% scheme.colors.each do |color| %>
             <li class="card card--right float--left margin-right--delta">
@@ -17,6 +16,5 @@
           <% end %>
         </ul>
       </div>
-    </div>
   <% end %>
 </section>

@@ -2,7 +2,7 @@
 // ========================================
 
 // Variables
-$card-height:         200px;
+$card-height:         180px;
 $card-width:          150px;
 
 $color-title:         $darkest-gray;
@@ -24,7 +24,8 @@ $color-block-height:  125px;
 
 .card__title,
 .card__description {
-  margin-bottom: $spacer-foxtrot;
+  margin-bottom: $spacer-golf;
+  line-height: 1;
 }
 
 .card__title {
@@ -51,7 +52,7 @@ $color-block-height:  125px;
 
 // Icon Block
 .icon__block {
-  height: 70px;
+  height: 60px;
   margin-bottom: $spacer-delta;
   padding: $spacer-delta $spacer-delta $spacer-delta 0;
 }
