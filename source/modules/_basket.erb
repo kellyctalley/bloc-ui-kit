@@ -1,0 +1,60 @@
+<section role="region" aria-labelledby="inputs" class="page__section">
+  <header role="banner" class="section__header">
+    <div class="header__container">
+      <h4 class="header__title--section" id="cart">cart</h4>
+    </div>
+  </header>
+
+  <div class="section__body checkout">
+
+    <div class="checkout__steps">
+      <%= image_tag "main/cart.svg", class: "checkout__steps--image" %>
+    </div>
+
+    <div class="basket">
+      <h5>You have 3 items in your basket</h5>
+
+      <table class="basket__table">
+
+        <thead >
+          <th class="basket__table--col-1"></th>
+          <th class="basket__table--col-2">Name</th>
+          <th class="basket__table--col-3">Quantity</th>
+          <th class="basket__table--col-4">Total Price</th>
+          <th class="basket__table--col-5">Remove</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <div class="image__wrapper image__wrapper--tiny">
+                <%= image_tag "main/placeholder-img.jpg", class: "image__main" %>
+              </div>
+            </td>
+
+            <td>
+              Super Cute Item
+            </td>
+
+            <td>
+              <input type="text" name="text" placeholder="1" class="input--text">
+            </td>
+
+            <td>
+              $45
+            </td>
+
+            <td>
+              <%= image_tag "icons/icon-x.svg" %>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </div>
+    
+
+  </div>
+
+</section>

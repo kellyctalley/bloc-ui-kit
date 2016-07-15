@@ -78,3 +78,19 @@ body {
 .page__container {
   @include outer-container;
 }
+
+.page__row { @include row(); }
+
+.page__col-1 { @include span-columns(1); }
+.page__col-2 { @include span-columns(2); }
+.page__col-3 { @include span-columns(3); }
+.page__col-4 { @include span-columns(4); }
+.page__col-5 { @include span-columns(5); }
+.page__col-6 { @include span-columns(6); }
+.page__col-7 { @include span-columns(7); }
+.page__col-8 { @include span-columns(8); }
+.page__col-9 { @include span-columns(9); }
+.page__col-10 { @include span-columns(10); }
+.page__col-11 { @include span-columns(11); }
+.page__col-12 { @include span-columns(12); }
+

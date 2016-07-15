@@ -1,0 +1,30 @@
+// Catalog Module
+// ========================================
+
+.catalog__sidebar--nav {
+  text-transform: uppercase;
+}
+
+.catalog__sidebar--subnav {
+  margin-left: 1em;
+}
+
+.catalog__item {
+  width: 300px;
+}
+
+.catalog__item--title {
+  margin-bottom: $spacer-golf;
+}
+
+.product__info {
+  padding-left: $spacer-delta;
+}
+
+.product__info--divider {
+  margin: $spacer-bravo 0;
+}
+
+.button--icon {
+  height: 20px;
+}

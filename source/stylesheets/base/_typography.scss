@@ -58,13 +58,17 @@ dd{
 }
 
 a {
-  @include font-type(inherit, normal, 400);
+  @include font-type(inherit, normal, 500);
   color: $dark-blue;
   text-decoration: none;
 
   &:active,
   &:focus {
     outline: none;
+  }
+
+  &:hover {
+    color: $medium-blue;
   }
 }
 
@@ -87,6 +91,30 @@ a {
   margin-bottom: $spacer-charlie;
 }
 
+.text__list {
+  list-style-position: inside;
+}
+
+.text__list--ol {
+  list-style-type: decimal;
+}
+
+.text__list--ul {
+  list-style-type: disc;
+}
+
+.text__blockquote {
+  margin-left: 1.5em;
+  border-left: 2px solid $medium-blue;
+  padding: 0.25em 0.5em;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.text__caption {
+  font-size: $s-golf;
+  font-style: italic;
+}
 
 
 // Text Alignment

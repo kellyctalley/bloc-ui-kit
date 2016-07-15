@@ -7,7 +7,13 @@ $image-wrapper-color:     $light-blue;
 $image-wrapper-padding:   $spacer-echo;
 $image-hover-color:       $darkest-gray;
 
-
+@mixin image-transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
+}
 
 
 // Structure
@@ -33,30 +39,29 @@ $image-hover-color:       $darkest-gray;
 .image__wrapper--small {
   height: 150px;
   width: 150px;
+  padding: $spacer-foxtrot;
+}
+
+.image__wrapper--tiny {
+  height: 50px;
+  width: 50px;
+  padding: $spacer-golf;
 }
 
 .image__main {
+  @include image-transition(all 300ms ease-out);
   width: 100%;
   position: relative;
   left: 0;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
 }
 
 .image__main--overlay {
+  @include image-transition(all 300ms ease-out);
   background-color: $image-hover-color;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
   opacity: 0;
   width: 100%;
   height: 100%;

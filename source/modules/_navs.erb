@@ -1,0 +1,52 @@
+<section role="region" aria-labelledby="inputs" class="page__section">
+  <header role="banner" class="section__header">
+    <div class="header__container">
+      <h4 class="header__title--section" id="navs">navs</h4>
+    </div>
+  </header>
+
+  <div class="section__body">
+    
+    <div class="page__row margin-bottom--alpha">
+      <div class="page__col-4">
+        <div class="homepage__logo nav__logo">
+          <%= image_tag "main/ck-logo-blk.png" %>
+        </div>
+      </div>
+      <div class="page__col-8 nav__top">
+        <ul class="nav__list nav__list--right">
+          <li class="nav__list--item"><%= link_to 'home', '#' %></li>
+          <li class="nav__list--item"><%= link_to 'shop', '#' %></li>
+          <li class="nav__list--item"><%= link_to 'blog', '#' %></li>
+          <li class="nav__list--item"><%= link_to 'about', '#' %></li>
+          <li class="nav__list--item"><%= link_to 'contact', '#' %></li>
+          <li class="nav__list--item"><% link_to '#' do %><%= image_tag 'icons/icon-basket.svg', class: 'nav__list--icon' %>(0)<% end %></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page__row">
+      <div class="page__col-4 nav__footer">
+        <div class="homepage__logo nav__social">
+          <ul class="nav__list nav__list--footer--social">
+          <li class="nav__list--item"><% link_to '#' do %><%= image_tag 'icons/icon-facebook.svg', class: 'nav__list--footer--icon' %><% end %></li>
+          <li class="nav__list--item"><% link_to '#' do %><%= image_tag 'icons/icon-pinterest.svg', class: 'nav__list--footer--icon' %><% end %></li>
+          <li class="nav__list--item"><% link_to '#' do %><%= image_tag 'icons/icon-instagram.svg', class: 'nav__list--footer--icon' %><% end %></li>
+          <li class="nav__list--item"><% link_to '#' do %><%= image_tag 'icons/icon-email.svg', class: 'nav__list--footer--icon' %><% end %></li>
+        </ul>
+        </div>
+      </div>
+      <div class="page__col-8">
+        <ul class="nav__list nav__list--right">
+          <li class="nav__list--item"><%= link_to 'home', '#' %></li>
+          <li class="nav__list--item"><%= link_to 'shop', '#' %></li>
+          <li class="nav__list--item"><%= link_to 'blog', '#' %></li>
+          <li class="nav__list--item"><%= link_to 'about', '#' %></li>
+          <li class="nav__list--item"><%= link_to 'contact', '#' %></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</section>
