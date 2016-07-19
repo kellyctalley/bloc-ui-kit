@@ -16,7 +16,7 @@
 
       <table class="basket__table">
 
-        <thead >
+        <thead class="basket__table--row">
           <th class="basket__table--col-1"></th>
           <th class="basket__table--col-2">Name</th>
           <th class="basket__table--col-3">Quantity</th>
@@ -25,9 +25,55 @@
         </thead>
 
         <tbody>
-          <tr>
+          <tr class="basket__table--row">
             <td>
-              <div class="image__wrapper image__wrapper--tiny">
+              <div class="image__wrapper image__wrapper--tiny basket__image">
+                <%= image_tag "main/placeholder-img.jpg", class: "image__main" %>
+              </div>
+            </td>
+
+            <td>
+              Super Cute Item
+            </td>
+
+            <td>
+              <input type="text" name="text" placeholder="1" class="input--text">
+            </td>
+
+            <td>
+              $45
+            </td>
+
+            <td>
+              <%= image_tag "icons/icon-x.svg" %>
+            </td>
+          </tr>
+          <tr class="basket__table--row">
+            <td>
+              <div class="image__wrapper image__wrapper--tiny basket__image">
+                <%= image_tag "main/placeholder-img.jpg", class: "image__main" %>
+              </div>
+            </td>
+
+            <td>
+              Super Cute Item
+            </td>
+
+            <td>
+              <input type="text" name="text" placeholder="1" class="input--text">
+            </td>
+
+            <td>
+              $45
+            </td>
+
+            <td>
+              <%= image_tag "icons/icon-x.svg" %>
+            </td>
+          </tr>
+          <tr class="basket__table--row">
+            <td>
+              <div class="image__wrapper image__wrapper--tiny basket__image">
                 <%= image_tag "main/placeholder-img.jpg", class: "image__main" %>
               </div>
             </td>
